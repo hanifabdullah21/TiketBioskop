@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ff5151"
+	android:gravity="center"
+	tools:context="com.singpaulee.tiketbioskop.LoginActivity">
+
+	<LinearLayout
+		android:layout_width="300dp"
+		android:layout_height="wrap_content"
+		android:background="#79ffffff"
+		android:orientation="vertical"
+		android:padding="10dp">
+
+		<EditText
+			android:id="@+id/edt_login_nickname"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Enter your nickname"/>
+
+		<EditText
+			android:id="@+id/edt_login_password"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Enter your password"
+			android:inputType="textPassword"/>
+
+		<LinearLayout
+			android:id="@+id/line"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="right"
+			android:layout_margin="5dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Forgot your Password? "/>
+
+			<TextView
+				android:id="@+id/tv_forgot_password"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Click Here !"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp">
+
+			<Button
+				android:id="@+id/btn_login"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="20dp"
+				android:layout_marginRight="10dp"
+				android:layout_weight="1"
+				android:text="LOGIN"/>
+
+			<Button
+				android:id="@+id/btn_register"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="14dp"
+				android:layout_marginLeft="10dp"
+				android:layout_marginRight="20dp"
+				android:layout_weight="1"
+				android:text="REGISTER"/>
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
